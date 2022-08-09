@@ -1,7 +1,8 @@
 __pycache__/
 data/
-.history/
 africa_twitter_data.json
 global_twitter_data.json
 sampling_script.py
 test_data_100.json
+.history
+.DS_Store
