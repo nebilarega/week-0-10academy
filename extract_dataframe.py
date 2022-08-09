@@ -163,8 +163,6 @@ class TweetDfExtractor:
         hashtags = self.find_hashtags()
         mentions = self.find_mentions()
         location = self.find_location()
-        # print(len(created_at), len(source), len(text), len(polarity), len(subjectivity), len(lang), len(fav_count), len(retweet_count), len(
-        #     screen_name), len(follower_count), len(friends_count), len(sensitivity), len(hashtags), len(mentions), len(location))
         data = zip(created_at, source, text, polarity, subjectivity,
                    lang, fav_count, retweet_count, screen_name, follower_count, friends_count, sensitivity, hashtags, mentions, location)
         df = pd.DataFrame(data=data, columns=columns)
@@ -190,7 +188,6 @@ if __name__ == "__main__":
 
     tweet_df = tweet.cleaned_tweet(tweet_df)
 
-    print(tweet_df['subjectivity'][0:5])
     polarity_cleaned, subjectivity_cleaned = tweet.find_sentiments(
         tweet_df['cleaned_text'])
     tweet_df['polarity_cleaned'] = polarity_cleaned
