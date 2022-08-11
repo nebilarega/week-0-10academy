@@ -4,5 +4,7 @@ africa_twitter_data.json
 global_twitter_data.json
 sampling_script.py
 test_data_100.json
+processed_tweet_data.csv
+processed_and_cleaned_tweet_data_full.csv
 .history
 .DS_Store
